@@ -1,0 +1,436 @@
+ 成功加强了ResizeObserver处理
+ Feature flag __VUE_PROD_HYDRATION_MISMATCH_DETAILS__ is not explicitly defined. You are running the esm-bundler build of Vue, which expects these compile-time feature flags to be globally injected via the bundler config in order to get better tree-shaking in the production bundle.
+
+For more details, see https://link.vuejs.org/feature-flags.
+initFeatureFlags @ webpack-internal:///…esm-bundler.js:4744
+ Robots组件已创建，准备获取数据
+ 开始获取机器人数据
+ 调用API: 获取所有机器人
+index.js:92 API请求: GET /robots/
+index.js:100 已添加认证令牌
+index.js:119 API响应: GET /robots/ [
+  {
+    "battery_level": 70.32, 
+    "id": 1, 
+    "last_charging": "2025-05-09 18:01:40", 
+    "name": "\u673a\u5668\u4eba-001", 
+    "status": "working"
+  }, 
+  {
+    "battery_level": 32.03, 
+    "id": 2, 
+    "last_charging": "2025-04-29 17:27:40", 
+    "name": "\u673a\u5668\u4eba-002", 
+    "status": "working"
+  }, 
+  {
+    "battery_level": 71.62, 
+    "id": 3, 
+    "last_charging": "2025-05-24 01:54:40", 
+    "name": "\u673a\u5668\u4eba-003", 
+    "status": "working"
+  }, 
+  {
+    "battery_level": 82.69, 
+    "id": 4, 
+    "last_charging": "2025-05-16 17:42:40", 
+    "name": "\u673a\u5668\u4eba-004", 
+    "status": "idle"
+  }, 
+  {
+    "battery_level": 89.8, 
+    "id": 5, 
+    "last_charging": "2025-05-15 19:46:40", 
+    "name": "\u673a\u5668\u4eba-005", 
+    "status": "idle"
+  }, 
+  {
+    "battery_level": 99.76, 
+    "id": 6, 
+    "last_charging": "2025-05-28 11:02:40", 
+    "name": "\u673a\u5668\u4eba-006", 
+    "status": "working"
+  }, 
+  {
+    "battery_level": 81.29, 
+    "id": 7, 
+    "last_charging": NaN, 
+    "name": "\u673a\u5668\u4eba-007", 
+    "status": "working"
+  }, 
+  {
+    "battery_level": 99.65, 
+    "id": 8, 
+    "last_charging": "2025-05-02 13:28:40", 
+    "name": "\u673a\u5668\u4eba-008", 
+    "status": "working"
+  }, 
+  {
+    "battery_level": 26.11, 
+    "id": 9, 
+    "last_charging": "2025-05-16 08:42:40", 
+    "name": "\u673a\u5668\u4eba-009", 
+    "status": "charging"
+  }, 
+  {
+    "battery_level": 88.79, 
+    "id": 10, 
+    "last_charging": "2025-05-25 17:52:40", 
+    "name": "\u673a\u5668\u4eba-010", 
+    "status": "idle"
+  }, 
+  {
+    "battery_level": 15.97, 
+    "id": 11, 
+    "last_charging": "2025-04-28 21:13:40", 
+    "name": "\u673a\u5668\u4eba-011", 
+    "status": "charging"
+  }, 
+  {
+    "battery_level": 60.78, 
+    "id": 12, 
+    "last_charging": "2025-05-21 20:06:40", 
+    "name": "\u673a\u5668\u4eba-012", 
+    "status": "idle"
+  }, 
+  {
+    "battery_level": 62.77, 
+    "id": 13, 
+    "last_charging": "2025-05-13 21:01:40", 
+    "name": "\u673a\u5668\u4eba-013", 
+    "status": "idle"
+  }, 
+  {
+    "battery_level": 76.93, 
+    "id": 14, 
+    "last_charging": "2025-05-07 07:26:40", 
+    "name": "\u673a\u5668\u4eba-014", 
+    "status": "idle"
+  }, 
+  {
+    "battery_level": 99.56, 
+    "id": 15, 
+    "last_charging": "2025-05-13 00:04:40", 
+    "name": "\u673a\u5668\u4eba-015", 
+    "status": "working"
+  }, 
+  {
+    "battery_level": 60.84, 
+    "id": 16, 
+    "last_charging": "2025-05-29 11:26:40", 
+    "name": "\u673a\u5668\u4eba-016", 
+    "status": "idle"
+  }, 
+  {
+    "battery_level": 30.6, 
+    "id": 17, 
+    "last_charging": NaN, 
+    "name": "\u673a\u5668\u4eba-017", 
+    "status": "working"
+  }, 
+  {
+    "battery_level": 68.57, 
+    "id": 18, 
+    "last_charging": "2025-05-14 00:59:40", 
+    "name": "\u673a\u5668\u4eba-018", 
+    "status": "idle"
+  }, 
+  {
+    "battery_level": 74.17, 
+    "id": 19, 
+    "last_charging": "2025-05-27 16:30:40", 
+    "name": "\u673a\u5668\u4eba-019", 
+    "status": "idle"
+  }, 
+  {
+    "battery_level": 18.86, 
+    "id": 20, 
+    "last_charging": "2025-05-02 10:56:40", 
+    "name": "\u673a\u5668\u4eba-020", 
+    "status": "error"
+  }, 
+  {
+    "battery_level": 65.61, 
+    "id": 21, 
+    "last_charging": "2025-05-26 23:20:40", 
+    "name": "\u673a\u5668\u4eba-021", 
+    "status": "idle"
+  }, 
+  {
+    "battery_level": 11.52, 
+    "id": 22, 
+    "last_charging": "2025-04-30 07:01:40", 
+    "name": "\u673a\u5668\u4eba-022", 
+    "status": "charging"
+  }, 
+  {
+    "battery_level": 53.32, 
+    "id": 23, 
+    "last_charging": "2025-05-29 01:55:40", 
+    "name": "\u673a\u5668\u4eba-023", 
+    "status": "working"
+  }, 
+  {
+    "battery_level": 80.66, 
+    "id": 24, 
+    "last_charging": "2025-05-05 20:29:40", 
+    "name": "\u673a\u5668\u4eba-024", 
+    "status": "error"
+  }, 
+  {
+    "battery_level": 18.9, 
+    "id": 25, 
+    "last_charging": NaN, 
+    "name": "\u673a\u5668\u4eba-025", 
+    "status": "charging"
+  }, 
+  {
+    "battery_level": 14.51, 
+    "id": 26, 
+    "last_charging": "2025-05-13 09:08:40", 
+    "name": "\u673a\u5668\u4eba-026", 
+    "status": "working"
+  }, 
+  {
+    "battery_level": 17.21, 
+    "id": 27, 
+    "last_charging": "2025-05-08 06:46:40", 
+    "name": "\u673a\u5668\u4eba-027", 
+    "status": "error"
+  }, 
+  {
+    "battery_level": 69.85, 
+    "id": 28, 
+    "last_charging": "2025-05-15 16:34:40", 
+    "name": "\u673a\u5668\u4eba-028", 
+    "status": "idle"
+  }, 
+  {
+    "battery_level": 38.47, 
+    "id": 29, 
+    "last_charging": "2025-05-19 06:55:40", 
+    "name": "\u673a\u5668\u4eba-029", 
+    "status": "working"
+  }, 
+  {
+    "battery_level": 70.45, 
+    "id": 30, 
+    "last_charging": "2025-05-05 12:11:40", 
+    "name": "\u673a\u5668\u4eba-030", 
+    "status": "working"
+  }, 
+  {
+    "battery_level": 99.86, 
+    "id": 31, 
+    "last_charging": "2025-05-21 06:03:40", 
+    "name": "\u673a\u5668\u4eba-031", 
+    "status": "working"
+  }, 
+  {
+    "battery_level": 89.28, 
+    "id": 32, 
+    "last_charging": "2025-05-14 20:26:40", 
+    "name": "\u673a\u5668\u4eba-032", 
+    "status": "error"
+  }, 
+  {
+    "battery_level": 98.55, 
+    "id": 33, 
+    "last_charging": NaN, 
+    "name": "\u673a\u5668\u4eba-033", 
+    "status": "working"
+  }, 
+  {
+    "battery_level": 29.9, 
+    "id": 34, 
+    "last_charging": "2025-05-25 14:36:40", 
+    "name": "\u673a\u5668\u4eba-034", 
+    "status": "charging"
+  }, 
+  {
+    "battery_level": 68.43, 
+    "id": 35, 
+    "last_charging": "2025-05-02 05:39:40", 
+    "name": "\u673a\u5668\u4eba-035", 
+    "status": "idle"
+  }, 
+  {
+    "battery_level": 91.48, 
+    "id": 36, 
+    "last_charging": "2025-05-25 13:11:40", 
+    "name": "\u673a\u5668\u4eba-036", 
+    "status": "working"
+  }, 
+  {
+    "battery_level": 21.77, 
+    "id": 37, 
+    "last_charging": "2025-05-11 15:44:40", 
+    "name": "\u673a\u5668\u4eba-037", 
+    "status": "working"
+  }, 
+  {
+    "battery_level": 20.07, 
+    "id": 38, 
+    "last_charging": "2025-05-03 02:34:40", 
+    "name": "\u673a\u5668\u4eba-038", 
+    "status": "working"
+  }, 
+  {
+    "battery_level": 48.68, 
+    "id": 39, 
+    "last_charging": "2025-05-23 12:14:40", 
+    "name": "\u673a\u5668\u4eba-039", 
+    "status": "working"
+  }, 
+  {
+    "battery_level": 71.39, 
+    "id": 40, 
+    "last_charging": "2025-05-12 00:32:40", 
+    "name": "\u673a\u5668\u4eba-040", 
+    "status": "working"
+  }, 
+  {
+    "battery_level": 17.1, 
+    "id": 41, 
+    "last_charging": "2025-05-29 08:24:40", 
+    "name": "\u673a\u5668\u4eba-041", 
+    "status": "charging"
+  }, 
+  {
+    "battery_level": 80.41, 
+    "id": 42, 
+    "last_charging": "2025-05-06 06:54:40", 
+    "name": "\u673a\u5668\u4eba-042", 
+    "status": "error"
+  }, 
+  {
+    "battery_level": 75.3, 
+    "id": 43, 
+    "last_charging": "2025-05-26 02:52:40", 
+    "name": "\u673a\u5668\u4eba-043", 
+    "status": "idle"
+  }, 
+  {
+    "battery_level": 16.69, 
+    "id": 44, 
+    "last_charging": "2025-05-21 11:22:40", 
+    "name": "\u673a\u5668\u4eba-044", 
+    "status": "charging"
+  }, 
+  {
+    "battery_level": 75.99, 
+    "id": 45, 
+    "last_charging": "2025-05-26 06:00:40", 
+    "name": "\u673a\u5668\u4eba-045", 
+    "status": "idle"
+  }, 
+  {
+    "battery_level": 98.52, 
+    "id": 46, 
+    "last_charging": "2025-05-26 14:21:40", 
+    "name": "\u673a\u5668\u4eba-046", 
+    "status": "working"
+  }, 
+  {
+    "battery_level": 64.56, 
+    "id": 47, 
+    "last_charging": "2025-05-11 07:55:40", 
+    "name": "\u673a\u5668\u4eba-047", 
+    "status": "working"
+  }, 
+  {
+    "battery_level": 80.8, 
+    "id": 48, 
+    "last_charging": "2025-05-26 16:13:40", 
+    "name": "\u673a\u5668\u4eba-048", 
+    "status": "idle"
+  }, 
+  {
+    "battery_level": 38.25, 
+    "id": 49, 
+    "last_charging": "2025-05-16 03:46:40", 
+    "name": "\u673a\u5668\u4eba-049", 
+    "status": "working"
+  }, 
+  {
+    "battery_level": 59.9, 
+    "id": 50, 
+    "last_charging": "2025-05-16 16:24:40", 
+    "name": "\u673a\u5668\u4eba-050", 
+    "status": "working"
+  }
+]
+
+index.js:344 机器人API响应状态: 200
+index.js:345 机器人API响应头: AxiosHeaders
+index.js:348 原始响应数据类型: string
+index.js:354 响应是字符串，尝试解析为JSON
+index.js:359 解析后的数据类型: object
+index.js:397 过滤后的机器人数据数量: 50
+index.js??clonedRuleSet-40.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/views/Robots.vue?vue&type=script&lang=js:88 获取到机器人数据(原始): Object
+index.js??clonedRuleSet-40.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/views/Robots.vue?vue&type=script&lang=js:89 获取到机器人数据: Array(50)
+index.js??clonedRuleSet-40.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/views/Robots.vue?vue&type=script&lang=js:90 机器人数据类型: object true
+index.js??clonedRuleSet-40.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/views/Robots.vue?vue&type=script&lang=js:102 有效的机器人数据: Array(50)
+index.js??clonedRuleSet-40.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/views/Robots.vue?vue&type=script&lang=js:106 成功设置机器人数据，数量: 50
+index.js??clonedRuleSet-40.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/views/Stations.vue?vue&type=script&lang=js:101 Stations组件已创建，准备获取数据
+index.js??clonedRuleSet-40.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/views/Stations.vue?vue&type=script&lang=js:115 开始获取充电站数据
+index.js:144 调用API: 获取所有充电站
+index.js:92 API请求: GET /stations/
+index.js:100 已添加认证令牌
+index.js:119 API响应: GET /stations/ Array(12)
+index.js:154 充电站API响应状态: 200
+index.js:155 充电站API响应头: AxiosHeaders
+index.js:158 原始响应数据类型: object
+index.js:212 过滤后的充电站数据数量: 12
+index.js??clonedRuleSet-40.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/views/Stations.vue?vue&type=script&lang=js:122 获取到充电站数据(原始): Object
+index.js??clonedRuleSet-40.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/views/Stations.vue?vue&type=script&lang=js:123 获取到充电站数据: Array(12)
+index.js??clonedRuleSet-40.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/views/Stations.vue?vue&type=script&lang=js:124 充电站数据类型: object true
+index.js??clonedRuleSet-40.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/views/Stations.vue?vue&type=script&lang=js:148 有效的充电站数据: Array(12)
+index.js??clonedRuleSet-40.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/views/Stations.vue?vue&type=script&lang=js:152 成功设置充电站数据，数量: 12
+index.js??clonedRuleSet-40.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/views/Stations.vue?vue&type=script&lang=js:275 对话框已打开
+index.js??clonedRuleSet-40.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/views/Stations.vue?vue&type=script&lang=js:326 准备提交的充电站数据: Object
+index.js??clonedRuleSet-40.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/views/Stations.vue?vue&type=script&lang=js:364 添加新充电站
+index.js:288 调用API: 添加充电站 Object
+index.js:301 格式化后的充电站数据: Object
+index.js:92 API请求: POST /stations/
+index.js:100 已添加认证令牌
+index.js:119 API响应: POST /stations/ Object
+index.js:310 添加充电站成功: Object
+index.js??clonedRuleSet-40.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/views/Stations.vue?vue&type=script&lang=js:370 添加充电站响应: Object
+index.js??clonedRuleSet-40.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/views/Stations.vue?vue&type=script&lang=js:115 开始获取充电站数据
+index.js:144 调用API: 获取所有充电站
+index.js:92 API请求: GET /stations/
+index.js:100 已添加认证令牌
+index.js:119 API响应: GET /stations/ Array(13)
+index.js:154 充电站API响应状态: 200
+index.js:155 充电站API响应头: AxiosHeaders
+index.js:158 原始响应数据类型: object
+index.js:212 过滤后的充电站数据数量: 13
+index.js??clonedRuleSet-40.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/views/Stations.vue?vue&type=script&lang=js:122 获取到充电站数据(原始): Object
+index.js??clonedRuleSet-40.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/views/Stations.vue?vue&type=script&lang=js:123 获取到充电站数据: Array(13)
+index.js??clonedRuleSet-40.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/views/Stations.vue?vue&type=script&lang=js:124 充电站数据类型: object true
+index.js??clonedRuleSet-40.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/views/Stations.vue?vue&type=script&lang=js:148 有效的充电站数据: Array(13)
+index.js??clonedRuleSet-40.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/views/Stations.vue?vue&type=script&lang=js:152 成功设置充电站数据，数量: 13
+index.js??clonedRuleSet-40.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/views/Stations.vue?vue&type=script&lang=js:192 当前页: 2
+energy-efficiency:1 Access to XMLHttpRequest at 'http://localhost:5000/api/energy-efficiency/kpi/?startDate=2025-04-29T15:20:47.205Z&endDate=2025-05-29T15:20:47.205Z' from origin 'http://localhost:8080' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: It does not have HTTP ok status.
+main.js:19 获取KPI数据失败: AxiosError
+console.error @ main.js:19
+:5000/api/energy-efficiency/kpi/?startDate=2025-04-29T15:20:47.205Z&endDate=2025-05-29T15:20:47.205Z:1 
+            
+            
+           Failed to load resource: net::ERR_FAILED
+energy-efficiency:1 Access to XMLHttpRequest at 'http://localhost:5000/api/energy-efficiency/efficiency-trend/?startDate=2025-04-29T15:20:47.205Z&endDate=2025-05-29T15:20:47.205Z' from origin 'http://localhost:8080' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: It does not have HTTP ok status.
+main.js:19 获取图表数据失败: AxiosError
+console.error @ main.js:19
+:5000/api/energy-efficiency/efficiency-trend/?startDate=2025-04-29T15:20:47.205Z&endDate=2025-05-29T15:20:47.205Z:1 
+            
+            
+           Failed to load resource: net::ERR_FAILED
+index.js??clonedRuleSet-40.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/views/EnergyEfficiency.vue?vue&type=script&lang=js:442 获取能耗分布数据，参数: Object
+energy-efficiency:1 Access to XMLHttpRequest at 'http://localhost:5000/api/energy-efficiency/energy-distribution/?startDate=2025-04-29T15:20:47.205Z&endDate=2025-05-29T15:20:47.205Z' from origin 'http://localhost:8080' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: It does not have HTTP ok status.
+main.js:19 渲染能耗分布热力图失败: AxiosError
+console.error @ main.js:19
+:5000/api/energy-efficiency/energy-distribution/?startDate=2025-04-29T15:20:47.205Z&endDate=2025-05-29T15:20:47.205Z:1 
+            
+            
+           Failed to load resource: net::ERR_FAILED

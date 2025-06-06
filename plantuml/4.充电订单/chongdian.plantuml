@@ -1,0 +1,15 @@
+@startuml
+actor 管理员 as 管理员
+participant "前端页面" as Frontend
+participant "API网关" as APIGateway
+participant "订单服务" as OrderService
+participant "数据库" as Database
+
+管理员 -> Frontend : 打开充电订单管理页面
+Frontend -> APIGateway : 请求充电订单数据
+APIGateway -> OrderService : 转发请求
+OrderService -> Database : 查询历史订单记录
+OrderService --> APIGateway : 返回订单数据集合
+APIGateway --> Frontend : 渲染订单列表与状态
+Frontend -> 管理员 : 展示订单状态、时间和充电量
+@enduml

@@ -1,0 +1,17 @@
+@startuml
+actor 管理员 as 管理员
+participant "前端页面" as Frontend
+participant "API网关" as APIGateway
+participant "机器人服务" as RobotService
+participant "数据库" as Database
+
+
+管理员 -> Frontend : 打开机器人管理页面
+Frontend -> APIGateway : 请求机器人列表
+APIGateway -> RobotService : 转发请求
+RobotService -> Database : 查询机器人基础信息
+
+RobotService --> APIGateway : 汇总并返回机器人信息
+APIGateway --> Frontend : 发送机器人列表
+Frontend -> 管理员 : 展示电量、状态与上次充电时间
+@enduml

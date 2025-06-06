@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>API测试页面</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        button { margin: 10px; padding: 8px 16px; }
+        pre { background-color: #f5f5f5; padding: 10px; border-radius: 5px; overflow: auto; max-height: 400px; }
+        .success { color: green; }
+        .error { color: red; }
+    </style>
+</head>
+<body>
+    <h1>API测试页面</h1>
+    
+    <div>
+        <button id="testRobots">测试机器人API</button>
+        <button id="testStations">测试充电站API</button>
+        <button id="testOrders">测试订单API</button>
+    </div>
+    
+    <h2>结果:</h2>
+    <pre id="result"></pre>
+    
+    <script>
+        function displayResult(data, success) {
+            const resultElement = document.getElementById('result');
+            resultElement.className = success ? 'success' : 'error';
+            resultElement.textContent = JSON.stringify(data, null, 2);
+        }
+        
+        document.getElementById('testRobots').addEventListener('click', async () => {
+            try {
+                const response = await fetch('/api/robots');
+                const data = await response.json();
+                console.log('机器人API响应:', data);
+                console.log('数据类型:', typeof data, Array.isArray(data));
+                displayResult({
+                    status: response.status,
+                    isArray: Array.isArray(data),
+                    length: Array.isArray(data) ? data.length : 'N/A',
+                    data: data
+                }, true);
+            } catch (error) {
+                console.error('获取机器人数据出错:', error);
+                displayResult({ error: error.message }, false);
+            }
+        });
+        
+        document.getElementById('testStations').addEventListener('click', async () => {
+            try {
+                const response = await fetch('/api/stations');
+                const data = await response.json();
+                console.log('充电站API响应:', data);
+                displayResult({
+                    status: response.status,
+                    isArray: Array.isArray(data),
+                    length: Array.isArray(data) ? data.length : 'N/A',
+                    data: data
+                }, true);
+            } catch (error) {
+                console.error('获取充电站数据出错:', error);
+                displayResult({ error: error.message }, false);
+            }
+        });
+        
+        document.getElementById('testOrders').addEventListener('click', async () => {
+            try {
+                const response = await fetch('/api/orders');
+                const data = await response.json();
+                console.log('订单API响应:', data);
+                displayResult({
+                    status: response.status,
+                    isArray: Array.isArray(data),
+                    length: Array.isArray(data) ? data.length : 'N/A',
+                    data: data
+                }, true);
+            } catch (error) {
+                console.error('获取订单数据出错:', error);
+                displayResult({ error: error.message }, false);
+            }
+        });
+    </script>
+</body>
+</html> 

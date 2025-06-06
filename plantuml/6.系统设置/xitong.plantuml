@@ -1,0 +1,21 @@
+@startuml
+actor 管理员 as 管理员
+participant "前端页面" as Frontend
+participant "API网关" as APIGateway
+participant "配置服务" as ConfigService
+participant "数据库" as Database
+
+管理员 -> Frontend : 打开系统设置页面
+Frontend -> APIGateway : 请求当前系统配置
+APIGateway -> ConfigService : 转发请求
+ConfigService -> Database : 读取配置数据
+ConfigService --> APIGateway : 返回配置结果
+APIGateway --> Frontend : 展示配置项
+
+管理员 -> Frontend : 修改配置并点击保存
+Frontend -> APIGateway : 提交配置修改请求
+APIGateway -> ConfigService : 传送更新数据
+ConfigService -> Database : 更新配置参数
+ConfigService --> APIGateway : 返回保存结果
+APIGateway --> Frontend : 显示保存成功提示
+@enduml

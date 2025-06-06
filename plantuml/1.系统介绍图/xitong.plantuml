@@ -1,0 +1,16 @@
+@startuml
+actor 用户
+participant 前端界面
+participant API网关
+participant 概览服务
+participant MySQL数据库
+
+用户 -> 前端界面 : 访问系统概览页面
+前端界面 -> API网关 : 请求概览数据
+API网关 -> 概览服务 : 验证权限并转发请求
+概览服务 -> MySQL数据库 : 查询今日充电记录、告警日志、历史效率
+MySQL数据库 --> 概览服务 : 返回查询结果
+概览服务 --> API网关 : 汇总并返回数据
+API网关 --> 前端界面 : 发送系统概览数据
+前端界面 -> 用户 : 展示概览图表与告警信息
+@enduml

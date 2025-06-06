@@ -1,0 +1,15 @@
+@startuml
+actor 管理员 as 管理员
+participant "前端页面" as Frontend
+participant "API网关" as APIGateway
+participant "能效分析服务" as EnergyService
+participant "数据库" as Database
+
+管理员 -> Frontend : 进入能效分析页面
+Frontend -> APIGateway : 请求能效指标数据
+APIGateway -> EnergyService : 转发请求
+EnergyService -> Database : 获取历史能耗与效率数据
+EnergyService --> APIGateway : 返回处理结果
+APIGateway --> Frontend : 更新仪表盘与图表数据
+Frontend -> 管理员 : 展示充电效率趋势、总能耗等分析图
+@enduml

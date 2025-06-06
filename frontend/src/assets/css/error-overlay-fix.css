@@ -1,0 +1,20 @@
+/* 
+  特殊样式，用于隐藏webpack-dev-server错误覆盖层中的ResizeObserver错误
+  这个文件应该在开发环境中引入
+*/
+
+/* 隐藏包含ResizeObserver错误的覆盖层 */
+div[id^="webpack-dev-server-client-overlay"] {
+  display: none !important;
+}
+
+/* 如果需要更精确的控制，可以使用JavaScript动态添加这个选择器 */
+.hide-resize-observer-errors {
+  display: none !important;
+}
+
+/* 
+  注意：这种方法会隐藏所有webpack-dev-server错误覆盖层
+  如果你只想隐藏ResizeObserver错误，建议使用JavaScript方法
+  动态检查覆盖层内容，然后有选择地隐藏
+*/ 

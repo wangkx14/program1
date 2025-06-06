@@ -1,0 +1,16 @@
+@startuml
+actor 管理员
+participant "前端页面" as Frontend
+participant "API网关" as APIGateway
+participant "充电桩服务" as ChargerService
+participant "MySQL数据库" as Database
+
+
+管理员 -> Frontend : 访问充电桩管理页面
+Frontend -> APIGateway : 请求所有充电桩信息
+APIGateway -> ChargerService : 转发查询请求
+ChargerService -> Database : 查询充电桩基本信息与配置
+ChargerService --> APIGateway : 汇总返回数据
+APIGateway --> Frontend : 返回充电桩数据列表
+Frontend -> 管理员 : 展示充电桩状态与操作按钮
+@enduml

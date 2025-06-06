@@ -1,0 +1,16 @@
+@startuml
+actor 管理员 as 管理员
+participant "前端页面" as Frontend
+participant "API网关" as APIGateway
+participant "目标服务模块" as TargetService
+participant "数据库" as Database
+
+管理员 -> Frontend : 点击测试接口按钮
+Frontend -> APIGateway : 发起测试API请求
+APIGateway -> TargetService : 转发接口调用
+TargetService -> Database : 查询模拟数据或执行逻辑
+Database --> TargetService : 返回结果数据
+TargetService --> APIGateway : 封装响应结果
+APIGateway --> Frontend : 显示JSON测试结果
+Frontend -> 管理员 : 展示接口响应状态和内容
+@enduml
